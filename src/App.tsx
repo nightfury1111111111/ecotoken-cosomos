@@ -5,6 +5,7 @@ import "@shoelace-style/shoelace/dist/themes/light.css";
 import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path";
 import { ContractList } from "./features/accounts/ContractList";
 import { Console } from "./features/console/Console";
+import { Dashboard } from "./features/dashboard/Dashboard";
 import { SlDivider } from "@shoelace-style/shoelace/dist/react";
 import { Connection } from "./features/connection/Connection";
 import { Configuration } from "./features/connection/Configuration";
@@ -33,11 +34,11 @@ function App() {
       </aside>
       <section className="console">
         <Console />
+        {/* <Dashboard /> */}
       </section>
       <Configuration />
       <Messages />
       <ExecuteOptions />
-      <Donate />
     </div>
   );
 }

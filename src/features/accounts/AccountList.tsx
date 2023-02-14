@@ -42,8 +42,8 @@ export const AccountList: FC = () => {
       {Object.values(accounts).map((account) => (
         <AccountInfo key={account.address} account={account} />
       ))}
-      <AddAccount />
-      <SendCoins />
+      {/* <AddAccount /> */}
+      {/* <SendCoins /> */}
     </div>
   );
 };
